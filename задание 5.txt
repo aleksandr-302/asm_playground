@@ -1,0 +1,10 @@
+start:
+MOV A, 232
+MOV B, 48
+MOV [A], B
+.loop:
+INC A
+INC B
+MOV [A], B
+CMP A, 241
+JNZ .loop
